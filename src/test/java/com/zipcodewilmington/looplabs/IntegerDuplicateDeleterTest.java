@@ -25,7 +25,6 @@ public class IntegerDuplicateDeleterTest {
     public void testRemoveDuplicatesExactlyExactly() {
         Integer[] expected = new Integer[]{1, 2, 2, 4, 4, 6};
         Integer[] actual = deleter.removeDuplicatesExactly(3);
-        System.out.println(deleter.toString());
         TestUtils.assertArrayEquality(expected, actual);
     }
 

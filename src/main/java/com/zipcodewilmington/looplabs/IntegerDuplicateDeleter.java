@@ -29,6 +29,7 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
         return integerList.toArray(new Integer[0]);
     }
 
+    @Override
     public Integer getNumberOfOccurrences(Integer[] intArray, Integer numToCount) {
         int numOfOccurrences = 0;
         for (Integer num : intArray) {
